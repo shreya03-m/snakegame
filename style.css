@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.container{
+    width:70vmin;
+    height:70vmin;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2%;
+}
+.play-area{
+    background:rgb(134, 202, 134);
+    width:75%;
+    height: 90%;
+    border:8px solid;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.details{
+    border-bottom: 2px solid black;
+    background-color: rgb(129, 162, 129);
+    width: 100%;
+    display:flex;
+    justify-content:space-around;
+    font-size: large;
+    font-weight:800
+
+}
+.play-board{
+    background: rgb(162, 218, 162);
+    width:100%;
+    height: 100%;
+    display: grid;
+    grid-template:repeat(30,1fr)/repeat(30,1fr);
+    overflow: hidden;
+
+}
+.play-board .food{
+    background: rgb(23, 79, 184);
+    width:14px;
+    height:14px;
+    border-radius:3px;
+}
+.play-board .head{
+    background: rgb(36, 112, 44);
+    width:14px;
+    height:14px;
+    border-radius:3px;
+}
+.controls{
+    display :flex;
+    justify-content: space-between;
+}
+.controls i{
+    color: white;
+    padding: 25 px;
+    text-align: center;
+    cursor: pointer;
+    width: calc(100vw/8);
+    border: 1px solid rgb(66, 130, 73);
+}
+
+
+@media screen and (max-width: 800px){
+    .container{
+    width:80vmin;
+    height:70vmin;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+    }
+
+    .details{
+    border-bottom: 2px solid black;
+    background-color: rgb(129, 162, 129);
+    width: 100%;
+    display:flex;
+    justify-content:space-around;
+    font-size: large;
+    font-weight:800
+    }
+    
+    .play-board{
+    background: rgb(162, 218, 162);
+    width:100%;
+    height: 100%;
+    display: grid;
+    grid-template:repeat(30,1fr)/repeat(30,1fr);
+    overflow: hidden;
+    }
+
+    .controls{
+    display :flex;
+    justify-content: space-between;
+    }
+    
+    .controls i{
+    color: white;
+    padding: 25 px;
+    text-align: center;
+    cursor: pointer;
+    width: calc(100vw/8);
+    border: 1px solid rgb(66, 130, 73);
+}
+}
+
