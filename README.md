@@ -20,7 +20,7 @@ The goal of the game is to control the snake, eat food, and grow without collidi
 
 ---
 
-## 🛠️ Installation / Run Locally
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/shreya03-m/snake-game.git
+
+
+
+
